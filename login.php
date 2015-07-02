@@ -25,12 +25,25 @@ body {
 }
 </style>
 
-<body>
+  <form class="form-signin" action="login.php" method="POST">
+              <h2 class="form-signin-heading"><span style="color: #306EFF;">Regístrese</span></h2>
+              <label for="inputUser" class="sr-only">Nombre de usuario</label>
+              <input type="user" id="inputUser" class="form-control" placeholder="Nombre de usuario" required autofocus>
+              <label for="inputEmail" class="sr-only">Email</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+              <label for="inputPassword" class="sr-only">Contraseña</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+              <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="register.php">Registrarme</a></button>
+            </form>
+<!--
  <form action="login.php" method="POST">
   Usuario: <input type="text" name="username"> <br>
+
   Contraseña: <input type="password" name="password"> <br>
   <input type="submit" value="Iniciar" name="submit">   <a href="register.php">Registrarme</a>
-   </body>
+   </form> -->
+</body>
+
 <?php
 session_start();
 require ('config.php');
