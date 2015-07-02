@@ -25,13 +25,18 @@ body {
 }
 </style>
 
-	<body>
-		<form action="register.php" method="POST">
-		Username: <input type="text" name="username" > <br />
-		Password: <input type="password" name="password" ><br />
-		Confirm password: <input type="password" name="repassword" ><br />
-		 <input type="submit" name="submit" value="Register"> or <a href="login.php">Login</a>
-		</form>
+		<form class="form-signin" action="register.php" method="POST">
+              <h2 class="form-signin-heading"><span style="color: #306EFF;">Regístrese</span></h2>
+              <label for="inputUser" class="sr-only">Nombre de usuario</label>
+              <input type="user" id="inputUser" class="form-control" placeholder="Nombre de usuario" required autofocus>
+              <label for="inputPassword" class="sr-only">Contraseña</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Confirmar contraseña" required>
+              <label for="inputPassword" class="sr-only">Confirmar contraseña</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+            </form>
+
+
 	</body>
 </html>
 <?php
