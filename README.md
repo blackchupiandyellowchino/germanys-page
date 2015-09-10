@@ -1,23 +1,28 @@
 # germanys-page
-para la base de datos q tengo yo :
 
-nombre de la base: libreria
+Nombre de la base: germanys
 
-tabla: users: 
+Tablas
 
-              id int auto increment
-              username varchar 
-              password varchar
-              email varchar   (por las dudas puse email)
-              date date
+users:
+
+        id            int auto increment
+        username      varchar 
+        password      varchar
               
-              
-tabla libros:
 
-              titulo
-              autor
-              categoria                  (desde titulo hasta cantidad son todos varchar)
-              year
-              descripcion
-              cantidad
-              imagen longblolb (todavia no cree la funcion para ingresar imange)
+libros:
+
+        titulo        varchar
+        autor         varchar
+        categoria     varchar
+        year          int
+        descripcion   varchar
+        cantidad      int         
+        imagen        longblolb
+          
+
+ventas:
+
+		idusername		int
+		libro			varchar
