@@ -6,23 +6,23 @@ Tablas
 
 users:
 
-        id            int auto increment
-        username      varchar 
-        password      varchar
+        id            	int auto increment
+        username      	varchar 
+        password      	varchar
               
 
 libros:
 
-        titulo        varchar
-        autor         varchar
-        categoria     varchar
-        year          int
-        descripcion   varchar
-        cantidad      int         
-        imagen        longblolb
+        titulo        	varchar
+        autor         	varchar
+        categoria     	varchar
+        year          	int
+        descripcion   	varchar
+        cantidad      	int         
+        imagen		longblolb
           
 
 ventas:
 
-		idusername		int
-		libro			varchar
+	idusername	int
+	libro		varchar
