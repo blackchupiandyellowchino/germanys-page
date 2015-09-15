@@ -26,3 +26,6 @@ ventas:
 
 	idusername	int
 	libro		varchar
+	
+	
+	Puto
