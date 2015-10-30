@@ -1,0 +1,7 @@
+<?php
+	$name = "mysql.1freehosting.com";
+	$user = "u812468333_root";
+	$pass = "alumno";
+	$connect = mysql_connect($name,$user,$pass) or die ("No se conecta el user");
+	mysql_select_db("u812468333_page") or die ("No se conecta la base");
+?>
