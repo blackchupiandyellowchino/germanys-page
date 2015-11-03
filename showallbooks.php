@@ -30,7 +30,7 @@ body {
 session_start();
 
 require ('config.php');
-$registro = mysql_query("SELECT * FROM libros") or  die ("No se encontro la base con los libros");
+$registro = mysql_query("SELECT * FROM libros") or die ("No se encontro la base con los libros");
 while($reg=mysql_fetch_array($registro)){
 	?>
 
@@ -40,7 +40,7 @@ while($reg=mysql_fetch_array($registro)){
               <div class="col-lg-4">
               <img class="img-circle" src="Discours_de_la_méthode.jpg" alt="Generic placeholder image" width="140" height="144">
                 <h2> <?php echo $reg['titulo']; ?></h2>
-                <h3> <?php echo $reg['autor']; ?></h4>
+                <h3> <?php echo $reg['autor']; ?></h3>
                 <h4> <?php echo $reg['categoria']; ?></h4>
                 <p><?php echo $reg['descripcion']; ?></p>
         <?php
