@@ -34,7 +34,7 @@ $registro = mysql_query("SELECT * FROM libros") or die ("No se encontro la base 
         <?php
 while($reg=mysql_fetch_array($registro)){
 ?>
-          <li><?php echo $reg['titulo']; ?></li>
+          <li><a href="findbook.php?dato=<?php echo $reg['titulo']; ?>" > <?php echo $reg['titulo']; ?> </a></li>
           <?php
 
 }
@@ -49,7 +49,11 @@ while($reg=mysql_fetch_array($registro)){
   
   <script>
   // html demo
-  $('#html').jstree();
+  $('#html').jstree({
+           "plugins": ["core", "themes", "html_data", "search"] 
+    }).on("select_node.jstree", function (e, data) {
+           document.location = data.instance.get_node(data.node, true).children('a').attr('href');
+    });
 
   </script>
 </body>

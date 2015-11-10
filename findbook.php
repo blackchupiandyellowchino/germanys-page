@@ -28,10 +28,9 @@ body {
 <body>
  <?php
   require ('config.php');
-  $op=$_POST['dato'];
-  $buscar=$_POST['searchby'];
-  $registro = mysql_query("SELECT * FROM libros WHERE $buscar='".$op."'" );
-  if(mysql_num_rows($registro)){
+  $op=$_GET['dato'];
+  $registro = mysql_query("SELECT * FROM libros WHERE titulo='".$op."'" ) or die ("No se encontro la base con los libros");
+  
   while($reg=mysql_fetch_array($registro)){
 
     ?>
@@ -55,8 +54,6 @@ body {
 <?php
    }
   }
-  }
-  else
-  	echo "No existe ese libro papwa";
+  
 ?>
 </body>
